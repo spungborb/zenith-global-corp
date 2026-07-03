@@ -218,6 +218,7 @@ document.addEventListener('DOMContentLoaded', () => {
             input.closest('.form-group').classList.remove('invalid');
         });
     });
+    }
 });
 
 // --- 6. i18n / Language Switching Logic ---
