@@ -55,18 +55,18 @@ const template = `<!DOCTYPE html>
     <!-- Header / Navbar -->
     <header class="header" id="header">
         <div class="container navbar-container">
-            <a href="index.html" class="logo-link" title="Zenith Global">
+            <a href="/" class="logo-link" title="Zenith Global">
                 <img src="assets/logo.jpg" alt="Zenith Global Logo" class="brand-logo" loading="lazy">
                 <span class="brand-text">ZENITH <br><small>GLOBAL</small></span>
             </a>
             
             <nav class="main-nav" id="mainNav">
                 <ul class="nav-list">
-                    <li><a href="index.html" class="nav-link" data-i18n="nav_home">ANA SAYFA</a></li>
-                    <li><a href="index.html#about" class="nav-link" data-i18n="nav_about">HAKKIMIZDA</a></li>
-                    <li><a href="index.html#services" class="nav-link" data-i18n="nav_services">HİZMETLERİMİZ</a></li>
-                    <li><a href="index.html#projects" class="nav-link" data-i18n="nav_projects">PROJELER</a></li>
-                    <li><a href="index.html#contact" class="nav-link" data-i18n="nav_contact">İLETİŞİM</a></li>
+                    <li><a href="/" class="nav-link" data-i18n="nav_home">ANA SAYFA</a></li>
+                    <li><a href="/#about" class="nav-link" data-i18n="nav_about">HAKKIMIZDA</a></li>
+                    <li><a href="/#services" class="nav-link" data-i18n="nav_services">HİZMETLERİMİZ</a></li>
+                    <li><a href="/#projects" class="nav-link" data-i18n="nav_projects">PROJELER</a></li>
+                    <li><a href="/#contact" class="nav-link" data-i18n="nav_contact">İLETİŞİM</a></li>
                 </ul>
             </nav>
 
@@ -83,7 +83,7 @@ const template = `<!DOCTYPE html>
                 <p class="lead-text mt-4" data-i18n="{{key}}_content">İçerik yükleniyor...</p>
                 <p data-i18n="page_placeholder_text">Bu sayfanın içeriği hazırlanmaktadır.</p>
                 
-                <a href="index.html" class="btn btn-primary mt-5" data-i18n="nav_home">Ana Sayfaya Dön</a>
+                <a href="/" class="btn btn-primary mt-5" data-i18n="nav_home">Ana Sayfaya Dön</a>
             </div>
         </section>
     </main>
@@ -105,7 +105,7 @@ const template = `<!DOCTYPE html>
                 <div class="footer-col links-col">
                     <h4 class="footer-heading" data-i18n="ft_corp">Kurumsal</h4>
                     <ul class="footer-nav">
-                        <li><a href="index.html#about" data-i18n="nav_about">Hakkımızda</a></li>
+                        <li><a href="/#about" data-i18n="nav_about">Hakkımızda</a></li>
                         <li><a href="yonetim.html" data-i18n="ft_board">Yönetim Kurulu</a></li>
                         <li><a href="ik.html" data-i18n="link_hr">İnsan Kaynakları</a></li>
                         <li><a href="kalite.html" data-i18n="ft_quality">Kalite Politikamız</a></li>
@@ -115,9 +115,9 @@ const template = `<!DOCTYPE html>
                 <div class="footer-col links-col">
                     <h4 class="footer-heading" data-i18n="ft_activities">Faaliyetler</h4>
                     <ul class="footer-nav">
-                        <li><a href="index.html#services" data-i18n="srv_const_title">İnşaat Projeleri</a></li>
-                        <li><a href="index.html#services" data-i18n="srv_inv_title">Gayrimenkul Yatırımları</a></li>
-                        <li><a href="index.html#services" data-i18n="srv_trd_title">Küresel Ticaret</a></li>
+                        <li><a href="/#services" data-i18n="srv_const_title">İnşaat Projeleri</a></li>
+                        <li><a href="/#services" data-i18n="srv_inv_title">Gayrimenkul Yatırımları</a></li>
+                        <li><a href="/#services" data-i18n="srv_trd_title">Küresel Ticaret</a></li>
                     </ul>
                 </div>
                 
