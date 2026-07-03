@@ -1,36 +1,58 @@
-# Zenith Global - Kurumsal Web Sitesi
+# 🏢 Zenith Global - Kurumsal Web Sitesi Template'i
 
-Bu proje, Zenith Global firması için özel olarak tasarlanmış, **üretim ortamına hazır (production-ready)**, tek sayfa (Single Page Application hissiyatında) kurumsal bir web sitesidir.
+Bu proje, özellikle **İnşaat, Yatırım, Dış Ticaret** ve holding düzeyindeki firmalar için tasarlanmış, **yüksek performanslı, premium tasarımlı ve 3 dilli (Türkçe, İngilizce, Arapça)** tamamen duyarlı (responsive) bir kurumsal web sitesi şablonudur.
 
-## Özellikler & Mimari
+Modern web standartlarına uygun olarak Vanilla JS ve CSS ile geliştirilmiş olup, herhangi bir ağır framework (React/Vue/Angular) bağımlılığı olmadan maksimum hız (Core Web Vitals optimizasyonlu) sunar.
 
-- **Tamamen Vanilla Teknolojiler:** Herhangi bir framework (React, Vue) veya kütüphane (jQuery, Bootstrap) kullanılmadan sadece **HTML5, CSS3 ve JavaScript (ES6)** kullanılmıştır. Bu sayede maksimum hız, hafiflik ve sıfır dışa bağımlılık elde edilmiştir.
-- **Tasarım Dili (UI/UX):** Koray GYO referans alınarak; temiz (clean), kurumsal, güven veren geniş beyaz/gri boşluklu estetik tercih edilmiştir. Ana renkler Gece Mavisi (Navy) ve Kurumsal Altın (Gold).
-- **Responsive & A11y:** Tüm ekran boyutlarında test edilmiş, mobil için off-canvas menü eklenmiştir. Semantik HTML5 etiketleri ve erişilebilirlik kuralları gözetilmiştir.
-- **Güvenlik & Hata Yönetimi (Error Handling):** 
-  - Form verileri gönderilmeden önce detaylı JS validasyonundan geçer (boş alan, E-Posta Regex vb.).
-  - Girdi verileri `sanitizeHTML` utility'si kullanılarak istemci tarafında temizlenir (XSS koruması simülasyonu ve mimarisi). 
-- **Performans:** Modern CSS özellikleriyle ve `IntersectionObserver` ile animasyonlar scroll esnasında sadece ekrana girdiğinde tetiklenir, böylece CPU/GPU kaynak tüketimi minimumda tutulur.
+## ✨ Özellikler
 
-## Dosya Yapısı
+- **Çoklu Dil Desteği (i18n):** TR, EN ve AR dilleri arasında sayfa yenilenmeden (dinamik olarak) anında geçiş.
+- **Premium Tasarım:** Altın sarısı, koyu gri ve beyaz tonlarının harmanlandığı, modern kurumsal kimliği yansıtan zarif ve "temiz" (clean) tasarım dili.
+- **Yüksek Performans:** Sadece temel HTML/CSS/JS ile oluşturulmuş, `loading="lazy"` resim optimizasyonlarına sahip sıfır gecikmeli altyapı.
+- **Mobil Uyumluluk:** CSS Grid ve Flexbox kullanılarak tasarlanmış, tüm cihazlarda kusursuz görünen responsive yapı.
+- **Hazır Kurumsal Sayfalar:** 
+  - Yönetim Kurulu
+  - İnsan Kaynakları
+  - Kalite Politikası
+  - Müşteri İlişkileri
+  - KVKK, Çerez Politikası ve Gizlilik Sözleşmeleri
+- **Bileşenler:** FontAwesome ikon entegrasyonu, yapışkan (sticky) sidebar menüler, hero slider'lar, hover animasyonlu özellik kartları ve yasal makale düzenleri.
 
-- `index.html`: SEO dostu meta etiketleri içeren, ana sayfa ve hakkımızda/hizmetler bölümlerini barındıran tam sayfa yapısı.
-- `styles.css`: CSS Değişkenleri (Custom Properties) ile yapılandırılmış modüler, genişletilebilir ve temiz CSS kuralları. CSS reset, utility sınıfları ve section'lar modüler tutulmuştur.
-- `script.js`: DOM manipulation, scroll casusluğu (scrollSpy), mobil menü, IntersectionObserver animasyon tetikleyicileri ve Güvenli Form Validasyon mantığı.
-- `assets/`: Şirket logomuz (`logo.jpg`).
+## 🛠️ Kurulum ve Kullanım
 
-## Kurulum ve Çalıştırma
+Şablonu kullanmak için herhangi bir derleme aracına ihtiyacınız yoktur. Projeyi bilgisayarınıza indirdikten sonra doğrudan `index.html` dosyasını tarayıcınızda açabilir veya bir lokal sunucu (örn. VS Code Live Server) ile çalıştırabilirsiniz.
 
-Statik bir proje olduğu için ekstra bir derleme (build) sürecine ihtiyaç duymaz. 
-Herhangi bir HTTP sunucusu ile ayağa kaldırılabilir. 
+1. Depoyu klonlayın:
+   ```bash
+   git clone https://github.com/KULLANICI_ADI/zenith-global-corp.git
+   ```
+2. Proje dizinine gidin ve dosyaları düzenlemeye başlayın.
 
-Örnek olarak Python ile çalıştırmak için projenin kök dizininde:
-```bash
-python -m http.server 8080
+## 📝 İçerik Yönetimi ve Çeviriler
+
+Tüm metin içerikleri, dil seçenekleri ve çeviriler `translations.js` dosyası içerisinde tutulmaktadır. 
+Sitedeki metinleri değiştirmek için HTML dosyalarıyla uğraşmanıza gerek yoktur, doğrudan `translations.js` dosyasındaki JSON objesini güncelleyebilirsiniz:
+
+```javascript
+const tr_new = {
+    nav_home: "ANA SAYFA",
+    ik_h2: "Bizimle Geleceği İnşa Edin",
+    // Kendi metinlerinizi buraya ekleyin...
+};
 ```
-Node.js (npx) ile çalıştırmak için:
+
+## 🚀 Yayına Alma (Deployment)
+
+Proje statik dosyalardan (HTML, CSS, JS) oluştuğu için **Vercel, Netlify, GitHub Pages** veya klasik CPanel hosting hizmetleriyle saniyeler içinde yayına alınabilir.
+
 ```bash
-npx serve -p 8080
+# Vercel ile yayına almak için
+npx vercel --prod
 ```
 
-Ardından tarayıcınızda `http://localhost:8080` adresine gidebilirsiniz.
+## 📄 Lisans
+
+Bu proje açık kaynaklı olup, kişisel veya ticari projelerinizde (imzayı kaldırmadan veya uygun şekilde referans göstererek) kullanabilirsiniz.
+
+---
+**Tasarım & Geliştirme:** [Resul](https://bionluk.com/spungborb)

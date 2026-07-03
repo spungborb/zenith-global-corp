@@ -1,33 +1,28 @@
 <!DOCTYPE html>
 <html lang="tr" dir="ltr">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-    <title>Zenith Global | <span data-i18n="page_society_title">Title</span></title>
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zenith Global - Kurumsal Web Sitesi">
+    <title>Zenith Global</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <link rel="stylesheet" href="styles.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-light-grey">
-
-    <!-- Topbar -->
+<body>
     <div class="topbar">
-        <div class="container topbar-inner">
-            <div class="topbar-contact">
+        <div class="container d-flex justify-between align-center mobile-col">
+            <div class="topbar-info">
                 <span><i class="fas fa-phone-alt"></i> <span data-i18n="top_phone">+90 212 555 0000</span></span>
                 <span><i class="fas fa-envelope"></i> <span data-i18n="top_email">info@zenithglobal.com.tr</span></span>
             </div>
             <div class="topbar-links">
-                <a href="musteri.html" data-i18n="link_customer">Müşteri İlişkileri</a>
+                <a href="musteri.html" data-i18n="link_cust">Müşteri İlişkileri</a>
                 <a href="ik.html" data-i18n="link_hr">İnsan Kaynakları</a>
-                <div class="language-selector" id="langSelector">
-                    <span class="lang-btn" data-lang="tr">TR</span> | 
+                <div class="language-selector">
+                    <span class="lang-btn active" data-lang="tr">TR</span> | 
                     <span class="lang-btn" data-lang="en">EN</span> | 
                     <span class="lang-btn" data-lang="ar">AR</span>
                 </div>
@@ -35,14 +30,12 @@
         </div>
     </div>
 
-    <!-- Header / Navbar -->
     <header class="header" id="header">
         <div class="container navbar-container">
             <a href="index.html" class="logo-link" title="Zenith Global">
-                <img src="assets/logo.jpg" alt="Zenith Global Logo" class="brand-logo" loading="lazy">
+                <img src="assets/logo.jpg" alt="Zenith Global Logo" class="brand-logo">
                 <span class="brand-text">ZENITH <br><small>GLOBAL</small></span>
             </a>
-            
             <nav class="main-nav" id="mainNav">
                 <ul class="nav-list">
                     <li><a href="index.html" class="nav-link" data-i18n="nav_home">ANA SAYFA</a></li>
@@ -52,31 +45,43 @@
                     <li><a href="index.html#contact" class="nav-link" data-i18n="nav_contact">İLETİŞİM</a></li>
                 </ul>
             </nav>
-
-            <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Menüyü Aç">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
     </header>
 
     <main>
-        <section class="py-section bg-white" style="min-height: 50vh; padding-top: 120px;">
+        <section class="page-header">
             <div class="container">
-                <h1 class="section-heading" data-i18n="page_society_title">Başlık</h1>
-                <p class="lead-text mt-4" data-i18n="page_society_content">İçerik yükleniyor...</p>
-                <p data-i18n="page_placeholder_text">Bu sayfanın içeriği hazırlanmaktadır.</p>
+                <h1 class="page-title fade-up" data-i18n="page_society_title">Bilgi Toplumu Hizmetleri</h1>
+            </div>
+        </section>
+
+        <section class="page-content bg-light-grey">
+            <div class="container fade-up delay-1 ">
                 
-                <a href="index.html" class="btn btn-primary mt-5" data-i18n="nav_home">Ana Sayfaya Dön</a>
+<div class="legal-layout">
+    <h3 data-i18n="leg_soc_h1">Şirket Sicil Bilgileri</h3>
+    
+    <ul class="list-unstyled" style="line-height: 2.5; font-size: 1.1rem; padding-left: 0;">
+        <li><strong data-i18n="leg_soc_l1t" style="display:inline-block; width: 180px;">Ticaret Unvanı:</strong> <span data-i18n="leg_soc_l1d">Zenith Global Yatırım ve İnşaat Anonim Şirketi</span></li>
+        <li><strong data-i18n="leg_soc_l2t" style="display:inline-block; width: 180px;">Ticaret Sicil No:</strong> <span data-i18n="leg_soc_l2d">123456-0</span></li>
+        <li><strong data-i18n="leg_soc_l3t" style="display:inline-block; width: 180px;">Mersis No:</strong> <span data-i18n="leg_soc_l3d">0123456789000015</span></li>
+        <li><strong data-i18n="leg_soc_l4t" style="display:inline-block; width: 180px;">Vergi Dairesi ve No:</strong> <span data-i18n="leg_soc_l4d">Zincirlikuyu VD. / 123 456 7890</span></li>
+        <li><strong data-i18n="leg_soc_l5t" style="display:inline-block; width: 180px;">Merkez Adresi:</strong> <span data-i18n="leg_soc_l5d">Büyükdere Caddesi No: 120 Kat: 15-16 Levent, Beşiktaş / İstanbul</span></li>
+    </ul>
+</div>
+        
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="footer bg-dark text-white">
         <div class="container footer-top">
             <div class="row footer-row">
                 <div class="footer-col brand-col">
-                    <img src="assets/logo.jpg" alt="Zenith Global" class="footer-logo mb-3" loading="lazy">
+                    <img src="assets/logo.jpg" alt="Zenith Global" class="footer-logo mb-3">
                     <p class="footer-desc" data-i18n="ft_desc">Uluslararası arenada inşaat, stratejik yatırım ve dış ticaretin vizyoner, güvenilir ve yenilikçi gücü.</p>
                     <div class="social-links mt-4">
                         <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
@@ -124,8 +129,8 @@
             </div>
         </div>
     </footer>
-
+    <a href="#" class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></a>
     <script src="translations.js"></script>
-    <script src="script.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

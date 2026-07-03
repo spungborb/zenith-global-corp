@@ -174,6 +174,20 @@ img { max-width: 100%; height: auto; display: block; }
 .topbar-links a { color: var(--clr-text-light); }
 .topbar-links a:hover { color: var(--clr-primary); }
 .language-selector .active { font-weight: 700; color: var(--clr-primary); }
+.lang-btn {
+    cursor: pointer; 
+    cursor: pointer; 
+    transition: all 0.2s ease; 
+    user-select: none; 
+    padding: 4px 8px; 
+    border-radius: 4px;
+    display: inline-block;
+}
+.lang-btn:hover { 
+    color: var(--clr-primary); 
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
 
 /* Header & Navbar */
 .header {
@@ -688,4 +702,226 @@ img { max-width: 100%; height: auto; display: block; }
     }
     .nav-link { font-size: 1.1rem; display: block; width: 100%; border-bottom: 1px solid #eee; padding-bottom: 15px;}
     .nav-link::after { display: none; }
+}
+/* --- Alt Sayfa Stilleri --- */
+.page-header {
+    padding: 150px 0 80px;
+    background: linear-gradient(135deg, var(--clr-dark) 0%, var(--clr-primary) 100%);
+    color: var(--clr-bg-white);
+    text-align: center;
+}
+.page-content {
+    padding: 80px 0;
+    min-height: 50vh;
+}
+.page-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.page-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    color: var(--clr-primary);
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 15px;
+}
+.page-content h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--clr-accent);
+}
+.page-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--clr-text);
+    margin-bottom: 20px;
+}
+.page-content ul {
+    margin-bottom: 25px;
+    padding-left: 20px;
+}
+.page-content ul li {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--clr-text);
+    margin-bottom: 10px;
+    position: relative;
+}
+.page-content ul li::before {
+    content: '\f105';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    color: var(--clr-primary);
+    position: absolute;
+    left: -20px;
+    top: 0;
+}
+.page-content a {
+    color: var(--clr-primary);
+    text-decoration: underline;
+    font-weight: 600;
+}
+.page-content a:hover {
+    color: var(--clr-accent);
+}
+
+/* --- Yeni Detaylı Alt Sayfa Tasarımları --- */
+
+/* 1. Kurumsal Sayfalar (Sidebar Düzeni) */
+.corporate-layout {
+    display: flex;
+    gap: 50px;
+}
+.corporate-sidebar {
+    width: 25%;
+    flex-shrink: 0;
+}
+.corporate-main {
+    width: 75%;
+}
+.sidebar-menu {
+    background-color: var(--clr-bg-light);
+    border-radius: 8px;
+    padding: 20px;
+    position: sticky;
+    top: 100px;
+}
+.sidebar-menu h4 {
+    margin-bottom: 20px;
+    color: var(--clr-primary);
+    font-weight: 700;
+    border-bottom: 2px solid var(--clr-accent);
+    padding-bottom: 10px;
+}
+.sidebar-nav {
+    list-style: none;
+    padding: 0;
+}
+.sidebar-nav li {
+    margin-bottom: 10px;
+}
+.sidebar-nav a {
+    display: block;
+    padding: 10px 15px;
+    color: var(--clr-text);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: var(--transition-base);
+    font-weight: 500;
+}
+.sidebar-nav a:hover, .sidebar-nav a.active {
+    background-color: var(--clr-primary);
+    color: var(--clr-bg-white);
+}
+
+/* 2. Özellik Gridleri & İkon Kutuları (İK, Kalite) */
+.feature-box-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+.feature-box {
+    background-color: var(--clr-bg-white);
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    text-align: center;
+    transition: var(--transition-base);
+    border-bottom: 3px solid transparent;
+}
+.feature-box:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-bottom-color: var(--clr-accent);
+}
+.feature-box i {
+    font-size: 2.5rem;
+    color: var(--clr-primary);
+    margin-bottom: 15px;
+}
+.feature-box h4 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.feature-box p {
+    font-size: 0.95rem;
+    color: var(--clr-text-light);
+    margin-bottom: 0;
+}
+
+/* 3. Yasal Metinler (Legal Okuma Düzeni) */
+.legal-layout {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--clr-bg-white);
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+}
+.legal-layout h3 {
+    color: var(--clr-primary);
+    margin: 30px 0 15px;
+}
+.legal-clause {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.clause-number {
+    font-weight: 700;
+    color: var(--clr-accent);
+    font-size: 1.2rem;
+}
+.clause-text {
+    flex: 1;
+}
+
+/* 4. Proje Detay Düzeni */
+.project-detail-header {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+.project-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    background: var(--clr-dark);
+    color: var(--clr-bg-white);
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+.stat-item h5 {
+    color: var(--clr-accent);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+.stat-item p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+    color: white;
+}
+
+@media (max-width: 992px) {
+    .corporate-layout { flex-direction: column; }
+    .corporate-sidebar, .corporate-main { width: 100%; }
+    .sidebar-menu { position: static; margin-bottom: 30px; }
+    .project-stats-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+    .legal-layout { padding: 30px 20px; }
 }

@@ -218,3 +218,45 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+// --- 6. i18n / Language Switching Logic ---
+const initI18n = () => {
+    const savedLang = localStorage.getItem('zenith_lang') || 'tr';
+    
+    window.updateLanguage = (lang) => {
+        if (!window.translations || !window.translations[lang]) return;
+        
+        document.documentElement.lang = lang;
+        document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+        
+        const trans = window.translations[lang];
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (trans[key]) {
+                if (el.tagName === 'INPUT' && el.type === 'submit') {
+                    el.value = trans[key];
+                } else if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                    el.placeholder = trans[key];
+                } else {
+                    el.innerHTML = trans[key];
+                }
+            }
+        });
+        
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+        });
+        localStorage.setItem('zenith_lang', lang);
+    };
+    
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const lang = e.target.getAttribute('data-lang');
+            window.updateLanguage(lang);
+        });
+    });
+    
+    updateLanguage(savedLang);
+};
+
+document.addEventListener('DOMContentLoaded', initI18n);
