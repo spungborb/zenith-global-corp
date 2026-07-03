@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html lang="tr" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Zenith Global - İnşaat, Yatırım ve Dış Ticaret alanında küresel lider.">
-    <title>Zenith Global | İnşaat, Yatırım, Dış Ticaret</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
-    <!-- Google Fonts -->
+    <!-- SEO Meta Tags -->
+    <title>Zenith Global | İnşaat, Yatırım ve Dış Ticaret</title>
+    <meta name="description" content="Zenith Global; inşaat, stratejik yatırım ve dış ticaret alanlarında küresel çapta vizyoner projeler ve sürdürülebilir değerler üreten öncü bir kuruluştur.">
+    <meta name="keywords" content="inşaat, yatırım, dış ticaret, gayrimenkul, zenith global, kurumsal">
+    <meta name="author" content="Zenith Global">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Zenith Global | Kurumsal Mükemmellik">
+    <meta property="og:description" content="İnşaat, yatırım ve dış ticarette küresel çapta prestijli projeler üreten Zenith Global.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.zenithglobal.com.tr/">
+    <meta property="og:locale" content="tr_TR">
+    
+    <!-- Preconnect & Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.min.css">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-light-grey">
 
@@ -23,16 +33,14 @@
     <div class="topbar">
         <div class="container topbar-inner">
             <div class="topbar-contact">
-                <span><i class="fas fa-phone-alt"></i> <span data-i18n="top_phone">+90 212 555 0000</span></span>
-                <span><i class="fas fa-envelope"></i> <span data-i18n="top_email">info@zenithglobal.com.tr</span></span>
+                <span><i class="fas fa-phone-alt"></i> +90 212 555 0000</span>
+                <span><i class="fas fa-envelope"></i> info@zenithglobal.com.tr</span>
             </div>
             <div class="topbar-links">
-                <a href="musteri.html" data-i18n="link_customer">Müşteri İlişkileri</a>
-                <a href="ik.html" data-i18n="link_hr">İnsan Kaynakları</a>
-                <div class="language-selector" id="langSelector">
-                    <span class="lang-btn" data-lang="tr">TR</span> | 
-                    <span class="lang-btn" data-lang="en">EN</span> | 
-                    <span class="lang-btn" data-lang="ar">AR</span>
+                <a href="#">Müşteri İlişkileri</a>
+                <a href="#">İnsan Kaynakları</a>
+                <div class="language-selector">
+                    <span class="active">TR</span> | <a href="#">EN</a>
                 </div>
             </div>
         </div>
@@ -41,22 +49,22 @@
     <!-- Header / Navbar -->
     <header class="header" id="header">
         <div class="container navbar-container">
-            <a href="index.html" class="logo-link" title="Zenith Global">
-                <img src="assets/logo.jpg" alt="Zenith Global Logo" class="brand-logo" loading="lazy">
+            <a href="#" class="logo-link" title="Zenith Global">
+                <img src="assets/logo.jpg" alt="Zenith Global Logo" class="brand-logo">
                 <span class="brand-text">ZENITH <br><small>GLOBAL</small></span>
             </a>
             
             <nav class="main-nav" id="mainNav">
                 <ul class="nav-list">
-                    <li><a href="#home" class="nav-link" data-i18n="nav_home">ANA SAYFA</a></li>
-                    <li><a href="#about" class="nav-link" data-i18n="nav_about">HAKKIMIZDA</a></li>
-                    <li><a href="#services" class="nav-link" data-i18n="nav_services">HİZMETLERİMİZ</a></li>
-                    <li><a href="#projects" class="nav-link" data-i18n="nav_projects">PROJELER</a></li>
-                    <li><a href="#contact" class="nav-link" data-i18n="nav_contact">İLETİŞİM</a></li>
+                    <li><a href="#hero" class="nav-link active">ANA SAYFA</a></li>
+                    <li><a href="#about" class="nav-link">HAKKIMIZDA</a></li>
+                    <li><a href="#services" class="nav-link">HİZMETLERİMİZ</a></li>
+                    <li><a href="#projects" class="nav-link">PROJELER</a></li>
+                    <li><a href="#contact" class="nav-link">İLETİŞİM</a></li>
                 </ul>
             </nav>
 
-            <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Menüyü Aç">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
@@ -64,89 +72,122 @@
 
     <main>
         <!-- Hero Section -->
-        <section id="home" class="hero-section">
-            <!-- Background Image overlay -->
-            <div class="hero-bg"></div>
-            <div class="container hero-content text-white fade-up">
-                <span class="hero-subtitle" data-i18n="hero_subtitle">Mükemmelliği İnşa Ediyoruz</span>
-                <h1 class="hero-title" data-i18n="hero_title">Küresel Vizyon,<br>Kusursuz İcraat.</h1>
-                <p class="hero-desc" data-i18n="hero_desc">İnşaat, yatırım ve dış ticarette standartları belirleyen, yenilikçi ve sürdürülebilir stratejilerle geleceğe değer katan mega projeler.</p>
-                <div class="hero-buttons">
-                    <a href="index.html#about" class="btn btn-primary" data-i18n="btn_profile">Kurumsal Profil</a>
-                    <a href="index.html#projects" class="btn btn-outline-light" data-i18n="btn_our_projects">Projelerimiz</a>
+        <section id="hero" class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <span class="hero-subtitle fade-up">Mükemmelliği İnşa Ediyoruz</span>
+                <h1 class="hero-title fade-up delay-1">Küresel Vizyon,<br>Kusursuz İcraat.</h1>
+                <p class="hero-desc fade-up delay-2">İnşaat, yatırım ve dış ticarette standartları belirleyen, yenilikçi ve sürdürülebilir stratejilerle geleceğe değer katan mega projeler.</p>
+                <div class="hero-btn-group fade-up delay-3">
+                    <a href="#about" class="btn btn-primary">Kurumsal Profil</a>
+                    <a href="#projects" class="btn btn-outline-light">Projelerimiz</a>
                 </div>
             </div>
         </section>
 
-        <!-- About Section -->
-        <section id="about" class="py-section bg-white">
-            <div class="container row align-center">
-                <div class="col-6 fade-up">
-                    <div class="image-wrapper">
-                        <img src="assets/insaat.jpg" alt="Zenith Global Kurumsal" class="img-fluid rounded shadow" loading="lazy">
-                        <div class="experience-badge">
-                            <span class="exp-year" data-i18n="exp_year">25+</span>
-                            <span class="exp-text" data-i18n="exp_text">Yıllık<br>Deneyim</span>
+        <!-- About Section (Modeled after Koray GYO Corporate style) -->
+        <section id="about" class="about-section py-section bg-white">
+            <div class="container">
+                <div class="row about-row">
+                    <div class="about-text-col fade-right">
+                        <h4 class="section-subheading text-primary">HAKKIMIZDA</h4>
+                        <h2 class="section-heading">Yarım Asırlık Güven ve Sektörel Liderlik</h2>
+                        <p class="lead-text">Zenith Global, köklü geçmişi ve modern vizyonuyla, faaliyette bulunduğu inşaat, yatırım ve dış ticaret sektörlerinde "kalite ve güvenin" sembolü haline gelmiştir.</p>
+                        <p>Kuruluşumuzdan bu yana temel ilkemiz, sadece yapılar inşa etmek veya yatırımlar yapmak değil, aynı zamanda toplum için kalıcı ve sürdürülebilir değerler yaratmaktır. Küresel pazar dinamiklerini yakından takip eden uzman kadromuz, risk yönetimi ve yenilikçi finansal modellerle paydaşlarımıza en yüksek katma değeri sağlamaktadır.</p>
+                        
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle text-primary"></i>
+                                <span>Küresel Standartlarda Kalite Yönetimi</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle text-primary"></i>
+                                <span>Sürdürülebilir ve Çevreci Çözümler</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle text-primary"></i>
+                                <span>Finansal Disiplin ve Şeffaflık</span>
+                            </div>
+                        </div>
+                        
+                        <a href="#services" class="btn btn-dark mt-4">Faaliyet Alanlarımız</a>
+                    </div>
+                    <div class="about-image-col fade-left">
+                        <div class="image-wrapper">
+                            <div class="img-frame"></div>
+                            <!-- Placeholder image replicating corporate building -->
+                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Zenith Global Genel Merkez" class="corporate-img">
+                            <div class="experience-badge">
+                                <span class="number">25+</span>
+                                <span class="text">Yıllık<br>Deneyim</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-6 content-wrapper fade-up delay-1">
-                    <span class="section-subheading" data-i18n="about_subheading">HAKKIMIZDA</span>
-                    <h2 class="section-heading" data-i18n="about_heading">Yarım Asırlık Güven ve Sektörel Liderlik</h2>
-                    <p class="lead-text mt-4" data-i18n="about_p1">Zenith Global, köklü geçmişi ve modern vizyonuyla, faaliyette bulunduğu inşaat, yatırım ve dış ticaret sektörlerinde 'kalite ve güvenin' sembolü haline gelmiştir.</p>
-                    <p class="text-muted mt-3" data-i18n="about_p2">Kuruluşumuzdan bu yana temel ilkemiz, sadece yapılar inşa etmek veya yatırımlar yapmak değil, aynı zamanda toplum için kalıcı ve sürdürülebilir değerler yaratmaktır.</p>
-                    
-                    <ul class="feature-list mt-4">
-                        <li><i class="fas fa-check-circle text-primary"></i> <span data-i18n="feature_1">Küresel Standartlarda Kalite Yönetimi</span></li>
-                        <li><i class="fas fa-check-circle text-primary"></i> <span data-i18n="feature_2">Sürdürülebilir ve Çevreci Çözümler</span></li>
-                        <li><i class="fas fa-check-circle text-primary"></i> <span data-i18n="feature_3">Finansal Disiplin ve Şeffaflık</span></li>
-                    </ul>
-                    <a href="kalite.html" class="btn btn-primary mt-5" data-i18n="btn_services">Kalite Politikamız</a>
+                
+                <!-- Vision & Mission Sub-section -->
+                <div class="row vision-mission-row mt-5 pt-4">
+                    <div class="card-col fade-up">
+                        <div class="corporate-card">
+                            <div class="card-icon"><i class="fas fa-eye"></i></div>
+                            <h3>Vizyonumuz</h3>
+                            <p>Uluslararası standartlarda, çevreye duyarlı, modern teknolojilerle donatılmış projeler üreterek, dünya çapında tanınan ve tercih edilen lider bir global holding olmak.</p>
+                        </div>
+                    </div>
+                    <div class="card-col fade-up delay-1">
+                        <div class="corporate-card">
+                            <div class="card-icon"><i class="fas fa-bullseye"></i></div>
+                            <h3>Misyonumuz</h3>
+                            <p>Tüm faaliyet alanlarımızda etik değerlere bağlı kalarak, paydaşlarımız için güvenilir yatırımlar sunmak, toplumsal kalkınmaya destek olmak ve sektörde kalite çıtasını sürekli yükseltmek.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Services Section -->
-        <section id="services" class="py-section bg-light-grey">
+        <section id="services" class="services-section py-section bg-light-grey">
             <div class="container">
-                <div class="section-header text-center fade-up">
-                    <span class="section-subheading" data-i18n="services_subheading">FAALİYET ALANLARIMIZ</span>
-                    <h2 class="section-heading" data-i18n="services_heading">Geniş Kapsamlı ve Entegre Çözümler</h2>
-                    <p class="section-desc" data-i18n="services_desc">Zenith Global, üç ana kolda küresel ölçekte stratejik operasyonlar yürütmektedir.</p>
+                <div class="section-title-wrapper text-center fade-up">
+                    <h4 class="section-subheading text-primary">FAALİYET ALANLARIMIZ</h4>
+                    <h2 class="section-heading">Geniş Kapsamlı ve Entegre Çözümler</h2>
+                    <p class="section-desc mx-auto">Zenith Global, üç ana kolda küresel ölçekte stratejik operasyonlar yürütmektedir.</p>
                 </div>
-
-                <div class="row grid-3 mt-5">
+                
+                <div class="services-grid mt-5">
                     <!-- Service 1 -->
                     <div class="service-box fade-up">
                         <div class="service-img-wrap">
-                            <img src="assets/insaat.jpg" alt="İnşaat ve Taahhüt" loading="lazy">
+                            <img src="assets/insaat.jpg" alt="İnşaat ve Taahhüt">
                             <div class="service-icon-float"><i class="fas fa-hard-hat"></i></div>
                         </div>
                         <div class="service-content">
-                            <h3 data-i18n="srv_const_title">İnşaat ve Taahhüt</h3>
-                            <p data-i18n="srv_const_desc">Konut, ticari kompleksler, endüstriyel tesisler ve mega altyapı projelerinde projelendirmeden anahtar teslim aşamasına kadar uluslararası standartlarda mühendislik.</p>
+                            <h3>İnşaat ve Taahhüt</h3>
+                            <p>Konut, ticari kompleksler, endüstriyel tesisler ve mega altyapı projelerinde projelendirmeden anahtar teslim aşamasına kadar uluslararası standartlarda mühendislik ve mimarlık hizmetleri sunuyoruz.</p>
                         </div>
                     </div>
+                    
                     <!-- Service 2 -->
                     <div class="service-box fade-up delay-1">
                         <div class="service-img-wrap">
-                            <img src="assets/lojistik.jpg" alt="Stratejik Yatırım" loading="lazy">
-                            <div class="service-icon-float"><i class="fas fa-chart-line"></i></div>
+                            <img src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Stratejik Yatırım">
+                            <div class="service-icon-float"><i class="fas fa-chart-pie"></i></div>
                         </div>
                         <div class="service-content">
-                            <h3 data-i18n="srv_inv_title">Stratejik Yatırım</h3>
-                            <p data-i18n="srv_inv_desc">Gayrimenkul portföy yönetimi, girişim sermayesi fonları ve kurumsal finansman alanlarında, risk-getiri dengesini optimize eden yenilikçi yatırım stratejileri.</p>
+                            <h3>Stratejik Yatırım</h3>
+                            <p>Gayrimenkul portföy yönetimi, girişim sermayesi fonları ve kurumsal finansman alanlarında, risk-getiri dengesini optimize eden güvenilir, yenilikçi ve yüksek getirili yatırım stratejileri geliştiriyoruz.</p>
                         </div>
                     </div>
+                    
                     <!-- Service 3 -->
                     <div class="service-box fade-up delay-2">
                         <div class="service-img-wrap">
-                            <img src="assets/insaat.jpg" alt="Dış Ticaret ve Lojistik" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Dış Ticaret ve Lojistik">
                             <div class="service-icon-float"><i class="fas fa-globe"></i></div>
                         </div>
                         <div class="service-content">
-                            <h3 data-i18n="srv_trd_title">Dış Ticaret ve Lojistik</h3>
-                            <p data-i18n="srv_trd_desc">Kıtalararası tedarik zinciri optimizasyonu, hammadde temini ve geniş ihracat-ithalat ağımız ile küresel pazarlarda güvenilir ticaret köprüleri kuruyoruz.</p>
+                            <h3>Dış Ticaret ve Lojistik</h3>
+                            <p>Kıtalararası tedarik zinciri optimizasyonu, hammadde temini ve geniş ihracat-ithalat ağımız ile küresel pazarlarda güvenilir ticaret köprüleri kuruyoruz.</p>
                         </div>
                     </div>
                 </div>
@@ -154,43 +195,43 @@
         </section>
 
         <!-- Projects Section -->
-        <section id="projects" class="py-section bg-dark text-white">
+        <section id="projects" class="projects-section py-section bg-white">
             <div class="container">
-                <div class="section-header fade-up">
-                    <span class="section-subheading" data-i18n="proj_subheading">REFERANSLARIMIZ</span>
-                    <h2 class="section-heading" data-i18n="proj_heading">İmza Attığımız Değerler</h2>
+                <div class="section-title-wrapper fade-up">
+                    <h4 class="section-subheading text-primary">REFERANSLARIMIZ</h4>
+                    <h2 class="section-heading">İmza Attığımız Değerler</h2>
                 </div>
-
-                <div class="row grid-3 mt-5">
+                
+                <div class="projects-gallery mt-5">
                     <div class="project-item fade-up">
-                        <img src="assets/insaat.jpg" alt="Zenith Tower" class="project-img" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1554469384-e58fac16e23a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Zenith Tower" class="project-img">
                         <div class="project-overlay">
                             <div class="project-info">
-                                <span class="project-category" data-i18n="cat_commercial">Ticari / Ofis</span>
-                                <h3 class="project-title" data-i18n="proj_1_title">Zenith Tower Levent</h3>
-                                <a href="proje-detay.html" class="btn btn-outline-primary btn-sm mt-3" data-i18n="page_project_title">Projeyi İncele</a>
+                                <span class="project-category">Ticari / Ofis</span>
+                                <h3 class="project-title">Zenith Tower Levent</h3>
+                                <a href="#" class="project-link" aria-label="Projeyi İncele"><i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
                     
                     <div class="project-item fade-up delay-1">
-                        <img src="assets/lojistik.jpg" alt="Aura Lojistik" class="project-img" loading="lazy">
+                        <img src="assets/lojistik.jpg" alt="Aura Lojistik" class="project-img">
                         <div class="project-overlay">
                             <div class="project-info">
-                                <span class="project-category" data-i18n="cat_industrial">Endüstriyel</span>
-                                <h3 class="project-title" data-i18n="proj_2_title">Aura Global Lojistik Merkezi</h3>
-                                <a href="proje-detay.html" class="btn btn-outline-primary btn-sm mt-3" data-i18n="page_project_title">Projeyi İncele</a>
+                                <span class="project-category">Endüstriyel</span>
+                                <h3 class="project-title">Aura Global Lojistik Merkezi</h3>
+                                <a href="#" class="project-link" aria-label="Projeyi İncele"><i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
-
+                    
                     <div class="project-item fade-up delay-2">
-                        <img src="assets/insaat.jpg" alt="NEXUS Kompleks" class="project-img" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Nexus Konutları" class="project-img">
                         <div class="project-overlay">
                             <div class="project-info">
-                                <span class="project-category" data-i18n="cat_residential">Konut / Rezidans</span>
-                                <h3 class="project-title" data-i18n="proj_3_title">NEXUS Yaşam Kompleksi</h3>
-                                <a href="proje-detay.html" class="btn btn-outline-primary btn-sm mt-3" data-i18n="page_project_title">Projeyi İncele</a>
+                                <span class="project-category">Konut / Rezidans</span>
+                                <h3 class="project-title">NEXUS Yaşam Kompleksi</h3>
+                                <a href="#" class="project-link" aria-label="Projeyi İncele"><i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -199,68 +240,88 @@
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="py-section bg-white">
-            <div class="container row align-start">
-                <div class="col-5 fade-up">
-                    <span class="section-subheading" data-i18n="contact_subheading">İLETİŞİM</span>
-                    <h2 class="section-heading" data-i18n="contact_heading">Bize Ulaşın</h2>
-                    <p class="text-muted mt-4 mb-5" data-i18n="contact_desc">Yatırım fırsatları, devam eden projelerimiz veya ticari operasyonlarımız hakkında detaylı bilgi almak için iletişim formunu doldurabilirsiniz.</p>
+        <section id="contact" class="contact-section py-section bg-light-grey">
+            <div class="container">
+                <div class="row contact-row">
+                    <div class="contact-info-col fade-right">
+                        <h4 class="section-subheading text-primary">İLETİŞİM</h4>
+                        <h2 class="section-heading">Bize Ulaşın</h2>
+                        <p class="mb-4">Yatırım fırsatları, devam eden projelerimiz veya ticari operasyonlarımız hakkında detaylı bilgi almak için iletişim formunu doldurabilir veya kurumsal iletişim kanallarımızı kullanabilirsiniz.</p>
+                        
+                        <ul class="contact-details-list">
+                            <li>
+                                <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                                <div class="text">
+                                    <strong>Genel Müdürlük</strong>
+                                    Büyükdere Caddesi No: 120 Kat: 15-16<br>Levent, Beşiktaş / İstanbul, Türkiye
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon"><i class="fas fa-phone-alt"></i></div>
+                                <div class="text">
+                                    <strong>Telefon</strong>
+                                    +90 (212) 555 00 00
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon"><i class="fas fa-envelope"></i></div>
+                                <div class="text">
+                                    <strong>E-Posta</strong>
+                                    info@zenithglobal.com.tr
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                     
-                    <div class="contact-info-block">
-                        <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
-                        <div>
-                            <h4 data-i18n="addr_title">Genel Müdürlük</h4>
-                            <p data-i18n="addr_text">Büyükdere Caddesi No: 120 Kat: 15-16<br>Levent, Beşiktaş / İstanbul, Türkiye</p>
+                    <div class="contact-form-col fade-left">
+                        <div class="form-wrapper bg-white shadow-sm">
+                            <h3 class="mb-4">İletişim Formu</h3>
+                            <form id="contactForm" novalidate>
+                                <div class="form-row">
+                                    <div class="form-group half">
+                                        <label for="name">Adınız Soyadınız <span class="text-danger">*</span></label>
+                                        <input type="text" id="name" name="name" class="form-control" required autocomplete="name">
+                                        <span class="error-msg" id="nameError">Lütfen adınızı giriniz.</span>
+                                    </div>
+                                    <div class="form-group half">
+                                        <label for="email">E-Posta Adresiniz <span class="text-danger">*</span></label>
+                                        <input type="email" id="email" name="email" class="form-control" required autocomplete="email">
+                                        <span class="error-msg" id="emailError">Lütfen geçerli bir e-posta adresi giriniz.</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="subject">İlgili Departman / Konu <span class="text-danger">*</span></label>
+                                    <select id="subject" name="subject" class="form-control" required>
+                                        <option value="" disabled selected>Seçiniz</option>
+                                        <option value="insaat">İnşaat ve Taahhüt Projeleri</option>
+                                        <option value="yatirim">Yatırım ve Finansman</option>
+                                        <option value="ticaret">Dış Ticaret ve Tedarik</option>
+                                        <option value="diger">Diğer Kurumsal Konular</option>
+                                    </select>
+                                    <span class="error-msg" id="subjectError">Lütfen bir konu seçiniz.</span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="message">Mesajınız <span class="text-danger">*</span></label>
+                                    <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                                    <span class="error-msg" id="messageError">Lütfen mesajınızı giriniz. (XSS engeli devrede)</span>
+                                </div>
+                                
+                                <div class="form-group checkbox-group">
+                                    <input type="checkbox" id="kvkk" name="kvkk" required>
+                                    <label for="kvkk"><a href="#">KVKK Aydınlatma Metni</a>'ni okudum ve kabul ediyorum. <span class="text-danger">*</span></label>
+                                    <span class="error-msg" id="kvkkError">Devam etmek için onaylamalısınız.</span>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary btn-block mt-3" id="submitBtn">
+                                    <span class="btn-text">Mesajı Gönder</span>
+                                    <span class="spinner hidden"><i class="fas fa-circle-notch fa-spin"></i></span>
+                                </button>
+                                
+                                <div id="formAlert" class="alert hidden mt-3" role="alert"></div>
+                            </form>
                         </div>
-                    </div>
-                    <div class="contact-info-block mt-4">
-                        <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
-                        <div>
-                            <h4 data-i18n="phone_title">Telefon</h4>
-                            <p data-i18n="top_phone">+90 212 555 0000</p>
-                        </div>
-                    </div>
-                    <div class="contact-info-block mt-4">
-                        <div class="info-icon"><i class="fas fa-envelope"></i></div>
-                        <div>
-                            <h4 data-i18n="email_title">E-Posta</h4>
-                            <p data-i18n="top_email">info@zenithglobal.com.tr</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-7 fade-up delay-1">
-                    <div class="contact-form-wrapper">
-                        <h3 class="mb-4" data-i18n="form_title">İletişim Formu</h3>
-                        <form id="contactForm" class="contact-form">
-                            <div class="form-group">
-                                <label for="name" data-i18n="lbl_name">Adınız Soyadınız *</label>
-                                <input type="text" id="name" name="name" class="form-control" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email" data-i18n="lbl_email">E-Posta Adresiniz *</label>
-                                <input type="email" id="email" name="email" class="form-control" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="subject" data-i18n="lbl_subject">İlgili Departman / Konu *</label>
-                                <select id="subject" name="subject" class="form-control" required>
-                                    <option value="" disabled selected data-i18n="opt_select">Seçiniz</option>
-                                    <option value="insaat" data-i18n="opt_const">İnşaat ve Taahhüt Projeleri</option>
-                                    <option value="yatirim" data-i18n="opt_inv">Yatırım ve Finansman</option>
-                                    <option value="ticaret" data-i18n="opt_trd">Dış Ticaret ve Tedarik</option>
-                                    <option value="diger" data-i18n="opt_other">Diğer Kurumsal Konular</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="message" data-i18n="lbl_msg">Mesajınız *</label>
-                                <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
-                            </div>
-                            <div class="form-group checkbox-group">
-                                <input type="checkbox" id="kvkk" name="kvkk" required>
-                                <label for="kvkk"><a href="kvkk.html" data-i18n="lbl_kvkk">Aydınlatma Metni</a><span data-i18n="lbl_kvkk_read">'ni okudum ve kabul ediyorum.</span></label>
-                            </div>
-                            <button type="submit" class="btn btn-primary w-100" data-i18n="btn_send">Mesajı Gönder</button>
-                        </form>
                     </div>
                 </div>
             </div>
@@ -272,8 +333,8 @@
         <div class="container footer-top">
             <div class="row footer-row">
                 <div class="footer-col brand-col">
-                    <img src="assets/logo.jpg" alt="Zenith Global" class="footer-logo mb-3" loading="lazy">
-                    <p class="footer-desc" data-i18n="ft_desc">Uluslararası arenada inşaat, stratejik yatırım ve dış ticaretin vizyoner, güvenilir ve yenilikçi gücü.</p>
+                    <img src="assets/logo.jpg" alt="Zenith Global" class="footer-logo mb-3">
+                    <p class="footer-desc">Uluslararası arenada inşaat, stratejik yatırım ve dış ticaretin vizyoner, güvenilir ve yenilikçi gücü.</p>
                     <div class="social-links mt-4">
                         <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                         <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
@@ -282,32 +343,34 @@
                 </div>
                 
                 <div class="footer-col links-col">
-                    <h4 class="footer-heading" data-i18n="ft_corp">Kurumsal</h4>
+                    <h4 class="footer-heading">Kurumsal</h4>
                     <ul class="footer-nav">
-                        <li><a href="#about" data-i18n="nav_about">Hakkımızda</a></li>
-                        <li><a href="yonetim.html" data-i18n="ft_board">Yönetim Kurulu</a></li>
-                        <li><a href="ik.html" data-i18n="link_hr">İnsan Kaynakları</a></li>
-                        <li><a href="kalite.html" data-i18n="ft_quality">Kalite Politikamız</a></li>
+                        <li><a href="#about">Hakkımızda</a></li>
+                        <li><a href="#">Yönetim Kurulu</a></li>
+                        <li><a href="#">Vizyon ve Misyon</a></li>
+                        <li><a href="#">İnsan Kaynakları</a></li>
+                        <li><a href="#">Kalite Politikamız</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-col links-col">
-                    <h4 class="footer-heading" data-i18n="ft_activities">Faaliyetler</h4>
+                    <h4 class="footer-heading">Faaliyetler</h4>
                     <ul class="footer-nav">
-                        <li><a href="#services" data-i18n="srv_const_title">İnşaat Projeleri</a></li>
-                        <li><a href="#services" data-i18n="srv_inv_title">Gayrimenkul Yatırımları</a></li>
-                        <li><a href="#services" data-i18n="srv_trd_title">Küresel Ticaret</a></li>
+                        <li><a href="#services">İnşaat Projeleri</a></li>
+                        <li><a href="#services">Gayrimenkul Yatırımları</a></li>
+                        <li><a href="#services">Fon Yönetimi</a></li>
+                        <li><a href="#services">Küresel Ticaret</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-col links-col">
-                    <h4 class="footer-heading" data-i18n="ft_legal">Yasal Uyarılar</h4>
+                    <h4 class="footer-heading">Yasal Uyarılar</h4>
                     <ul class="footer-nav">
-                        <li><a href="kullanim.html" data-i18n="ft_terms">Kullanım Koşulları</a></li>
-                        <li><a href="gizlilik.html" data-i18n="ft_privacy">Gizlilik Politikası</a></li>
-                        <li><a href="kvkk.html" data-i18n="page_kvkk_title">KVKK Aydınlatma Metni</a></li>
-                        <li><a href="cerez.html" data-i18n="ft_cookie">Çerez Politikası</a></li>
-                        <li><a href="bilgi.html" data-i18n="ft_society">Bilgi Toplumu Hizmetleri</a></li>
+                        <li><a href="#">Kullanım Koşulları</a></li>
+                        <li><a href="#">Gizlilik Politikası</a></li>
+                        <li><a href="#">KVKK Aydınlatma Metni</a></li>
+                        <li><a href="#">Çerez Politikası</a></li>
+                        <li><a href="#">Bilgi Toplumu Hizmetleri</a></li>
                     </ul>
                 </div>
             </div>
@@ -315,14 +378,16 @@
         
         <div class="footer-bottom">
             <div class="container d-flex justify-between align-center mobile-col">
-                <p class="copyright m-0" data-i18n="ft_copy">&copy; 2026 Zenith Global Anonim Şirketi. Tüm Hakları Saklıdır.</p>
-                <p class="credit m-0" data-i18n="ft_credit">Tasarım & Geliştirme: Kurumsal Web Çözümleri</p>
+                <p class="copyright m-0">&copy; 2026 Zenith Global Anonim Şirketi. Tüm Hakları Saklıdır.</p>
+                <p class="credit m-0">Tasarım & Geliştirme: Kurumsal Web Çözümleri</p>
             </div>
         </div>
     </footer>
 
-    <!-- Translations & Main Script -->
-    <script src="translations.js"></script>
-    <script src="script.min.js"></script>
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top" id="backToTop" aria-label="Yukarı Çık"><i class="fas fa-chevron-up"></i></a>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
 </body>
 </html>
