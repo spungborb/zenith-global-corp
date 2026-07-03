@@ -116,6 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- 5. Form Validation & XSS Prevention (Production Ready) ---
     const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
     const submitBtn = document.getElementById('submitBtn');
     const btnText = submitBtn.querySelector('.btn-text');
     const spinner = submitBtn.querySelector('.spinner');
