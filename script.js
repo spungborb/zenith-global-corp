@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const mainNav = document.getElementById('mainNav');
     if (mobileToggle && mainNav) {
         mobileToggle.addEventListener('click', () => {
-            mainNav.classList.toggle('active');
+            mainNav.classList.toggle('show');
         });
     }
 
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const fadeObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
+                entry.target.classList.add('active');
                 observer.unobserve(entry.target);
             }
         });

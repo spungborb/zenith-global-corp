@@ -73,6 +73,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p { margin-bottom: 1rem; }
+a { color: var(--clr-secondary); text-decoration: none; transition: var(--transition-fast); }
+a:hover { color: var(--clr-primary); }
+
 .topbar-links a {
     color: var(--clr-text-light);
     text-decoration: none;
