@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="tr" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Zenith Global - Kurumsal Web Sitesi">
-    <title>Zenith Global</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Zenith Global | <span data-i18n="page_privacy_title">Title</span></title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="stylesheet" href="styles.min.css?v=2">
 </head>
-<body>
+<body class="bg-light-grey">
+
+    <!-- Topbar -->
     <div class="topbar">
-        <div class="container d-flex justify-between align-center mobile-col">
-            <div class="topbar-info">
+        <div class="container topbar-inner">
+            <div class="topbar-contact">
                 <span><i class="fas fa-phone-alt"></i> <span data-i18n="top_phone">+90 212 555 0000</span></span>
                 <span><i class="fas fa-envelope"></i> <span data-i18n="top_email">info@zenithglobal.com.tr</span></span>
             </div>
             <div class="topbar-links">
-                <a href="musteri.html" data-i18n="link_cust">Müşteri İlişkileri</a>
+                <a href="musteri.html" data-i18n="link_customer">Müşteri İlişkileri</a>
                 <a href="ik.html" data-i18n="link_hr">İnsan Kaynakları</a>
-                <div class="language-selector">
-                    <span class="lang-btn active" data-lang="tr">TR</span> | 
+                <div class="language-selector" id="langSelector">
+                    <span class="lang-btn" data-lang="tr">TR</span> | 
                     <span class="lang-btn" data-lang="en">EN</span> | 
                     <span class="lang-btn" data-lang="ar">AR</span>
                 </div>
@@ -30,12 +35,14 @@
         </div>
     </div>
 
+    <!-- Header / Navbar -->
     <header class="header" id="header">
         <div class="container navbar-container">
             <a href="index.html" class="logo-link" title="Zenith Global">
-                <img src="assets/logo.jpg" alt="Zenith Global Logo" class="brand-logo">
+                <img src="assets/logo.jpg" alt="Zenith Global Logo" class="brand-logo" loading="lazy">
                 <span class="brand-text">ZENITH <br><small>GLOBAL</small></span>
             </a>
+            
             <nav class="main-nav" id="mainNav">
                 <ul class="nav-list">
                     <li><a href="index.html" class="nav-link" data-i18n="nav_home">ANA SAYFA</a></li>
@@ -45,39 +52,31 @@
                     <li><a href="index.html#contact" class="nav-link" data-i18n="nav_contact">İLETİŞİM</a></li>
                 </ul>
             </nav>
-            <button class="mobile-toggle" id="mobileToggle" aria-label="Menüyü Aç">
+
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
     </header>
 
     <main>
-        <section class="page-header">
+        <section class="py-section bg-white" style="min-height: 50vh; padding-top: 120px;">
             <div class="container">
-                <h1 class="page-title fade-up" data-i18n="page_privacy_title">Gizlilik Politikası</h1>
-            </div>
-        </section>
-
-        <section class="page-content bg-light-grey">
-            <div class="container fade-up delay-1 ">
+                <h1 class="section-heading" data-i18n="page_privacy_title">Başlık</h1>
+                <p class="lead-text mt-4" data-i18n="page_privacy_content">İçerik yükleniyor...</p>
+                <p data-i18n="page_placeholder_text">Bu sayfanın içeriği hazırlanmaktadır.</p>
                 
-<div class="legal-layout">
-    <h3 data-i18n="leg_priv_h1">Gizlilik ve Güvenlik</h3>
-    <p data-i18n="leg_priv_p1">Zenith Global, ziyaretçilerinin kişisel gizliliğine saygı duyar. Sitemizi ziyaretiniz sırasında bizimle paylaştığınız iletişim bilgileri ve diğer verileriniz, 6698 sayılı KVKK kapsamında korunmaktadır.</p>
-    
-    <h3 data-i18n="leg_priv_h2">Veri Paylaşımı</h3>
-    <p data-i18n="leg_priv_p2">Bilgileriniz sadece talep ettiğiniz hizmetleri sunmak ve iletişim kurmak amacıyla kullanılır; yasal zorunluluklar dışında üçüncü şahıslarla asla paylaşılmaz.</p>
-</div>
-        
+                <a href="index.html" class="btn btn-primary mt-5" data-i18n="nav_home">Ana Sayfaya Dön</a>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer class="footer bg-dark text-white">
         <div class="container footer-top">
             <div class="row footer-row">
                 <div class="footer-col brand-col">
-                    <img src="assets/logo.jpg" alt="Zenith Global" class="footer-logo mb-3">
+                    <img src="assets/logo.jpg" alt="Zenith Global" class="footer-logo mb-3" loading="lazy">
                     <p class="footer-desc" data-i18n="ft_desc">Uluslararası arenada inşaat, stratejik yatırım ve dış ticaretin vizyoner, güvenilir ve yenilikçi gücü.</p>
                     <div class="social-links mt-4">
                         <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
@@ -125,8 +124,8 @@
             </div>
         </div>
     </footer>
-    <a href="#" class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></a>
-    <script src="translations.js"></script>
-    <script src="script.js"></script>
+
+    <script src="translations.js?v=2"></script>
+    <script src="script.min.js?v=2"></script>
 </body>
 </html>

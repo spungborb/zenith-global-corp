@@ -29,7 +29,7 @@ const template = `<!DOCTYPE html>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <link rel="stylesheet" href="styles.min.css">
+    <link rel="stylesheet" href="styles.min.css?v=2">
 </head>
 <body class="bg-light-grey">
 
@@ -142,8 +142,8 @@ const template = `<!DOCTYPE html>
         </div>
     </footer>
 
-    <script src="translations.js"></script>
-    <script src="script.min.js"></script>
+    <script src="translations.js?v=2"></script>
+    <script src="script.min.js?v=2"></script>
 </body>
 </html>`;
 
